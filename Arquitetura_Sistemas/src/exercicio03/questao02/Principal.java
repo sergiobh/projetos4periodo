@@ -21,8 +21,21 @@ public class Principal {
 		conta.transferirDinheiro();
 		
 		Investimento investimento = new Investimento();
+		investimento.fazerConsorcio();
+		investimento.fazerEmprestimo();
+		investimento.fazerFinancialmenteDeCarro();
+		investimento.fazerFinanciamenteImobiliario();
+		investimento.fazerInvestimentoEmAcoes();
+		investimento.fazerInvestimentoEmCDB();
+		investimento.fazerInvestimentoEmVGBL();
+		investimento.fazerInvestimentoNaPoupanca();
+		investimento.fazerPrevidenciaPrivada();
 		
 		Seguro seguro = new Seguro();
+		seguro.fazerSeguroDeAutomovel();
+		seguro.fazerSeguroDeVida();
+		seguro.fazerSeguroEstudantil();
+		seguro.fazerSeguroResidencial();
 	}
 
 }
