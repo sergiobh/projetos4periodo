@@ -1,14 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+package exercicio01.questao02;
 
-package compra;
-
-/**
- *
- * @author Edgard Davidson
- */
 public class ItemDeCompra {
 
     private String produto;
@@ -41,7 +32,4 @@ public class ItemDeCompra {
     public void setValorUnitario(double valorUnitario) {
         this.valorUnitario = valorUnitario;
     }
-
-
-
 }
