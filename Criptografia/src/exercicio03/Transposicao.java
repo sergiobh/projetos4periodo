@@ -10,7 +10,7 @@ public class Transposicao {
 	public String DeCriptografado;
 	
 	public Transposicao() {
-		this.Frase = "CADES";
+		this.Frase = "SERGIOmacedoDAsilvaSANTOS";
 		this.Criptografado = "";
 		this.DeCriptografado = "";
 		
@@ -34,8 +34,6 @@ public class Transposicao {
 	}
 
 	public void getCriptografia(){
-		
-		//System.out.println("caracteres = " + Frase.length());
 		
 		for(int i=0;i < Frase.length();i++){
 			this.Criptografar[i] = Frase.charAt(i);
@@ -80,12 +78,6 @@ public class Transposicao {
 			this.DeCriptografado += Primeira.charAt(i)+""+Segunda.charAt(i);
 		}
 
-		System.out.println(this.Criptografado.substring(-1));
-		
- 		if(this.Criptografado.substring(this.Criptografado.length() ) == "!" ){
-			
-			this.Criptografado = this.Criptografado.substring(0,-1);
-		}
-		
+		this.DeCriptografado = this.DeCriptografado.replaceAll("!", "");
 	}
 }
